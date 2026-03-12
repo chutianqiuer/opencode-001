@@ -5,6 +5,7 @@
 1. **GitHub Issue Management**: After each task completion, close the corresponding GitHub issue
 2. **Testing Requirement**: After each task completion, run corresponding tests to ensure code stability
 3. **Git Workflow**: After each task completion, commit locally and push to remote
+4. **Pull Request Flow**: After completing a feature phase, create a Pull Request to merge into master branch
 
 ## Completed Phases
 
