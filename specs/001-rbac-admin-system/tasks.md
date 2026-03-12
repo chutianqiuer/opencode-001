@@ -40,28 +40,28 @@
 
 ### Backend Setup
 
-- [ ] T001 Create backend project structure with directories: models/, schemas/, crud/, routers/, middleware/, utils/, core/
-- [ ] T002 Initialize Python project with requirements.txt including FastAPI, SQLAlchemy 2.0, Alembic, Pydantic v2, PyJWT, python-multipart, redis, loguru, passlib
-- [ ] T003 [P] Configure Black and Ruff in backend/pyproject.toml
-- [ ] T004 [P] Create backend/app/config.py for environment configuration management
-- [ ] T005 [P] Create backend/app/database.py for async database connection with SQLAlchemy 2.0
-- [ ] T006 [P] Create backend/app/dependencies.py for dependency injection
+- [x] T001 Create backend project structure with directories: models/, schemas/, crud/, routers/, middleware/, utils/, core/
+- [x] T002 Initialize Python project with requirements.txt including FastAPI, SQLAlchemy 2.0, Alembic, Pydantic v2, PyJWT, python-multipart, redis, loguru, passlib
+- [x] T003 [P] Configure Black and Ruff in backend/pyproject.toml
+- [x] T004 [P] Create backend/app/config.py for environment configuration management
+- [x] T005 [P] Create backend/app/database.py for async database connection with SQLAlchemy 2.0
+- [x] T006 [P] Create backend/app/dependencies.py for dependency injection
 
 ### Frontend Setup
 
-- [ ] T007 Create frontend project structure with directories: views/, api/, store/, components/, router/, utils/, types/, assets/
-- [ ] T008 Initialize Vue 3 project with package.json including Vue 3, TypeScript, Vite, Element Plus, axios, Pinia, Vue Router
-- [ ] T009 [P] Configure ESLint and Prettier in frontend/.eslintrc.js and frontend/.prettierrc
-- [ ] T010 [P] Create frontend/vite.config.ts with proxy configuration for API
-- [ ] T011 [P] Create frontend/tsconfig.json with strict mode enabled
+- [x] T007 Create frontend project structure with directories: views/, api/, store/, components/, router/, utils/, types/, assets/
+- [x] T008 Initialize Vue 3 project with package.json including Vue 3, TypeScript, Vite, Element Plus, axios, Pinia, Vue Router
+- [x] T009 [P] Configure ESLint and Prettier in frontend/.eslintrc.js and frontend/.prettierrc
+- [x] T010 [P] Create frontend/vite.config.ts with proxy configuration for API
+- [x] T011 [P] Create frontend/tsconfig.json with strict mode enabled
 
 ### Docker & Infrastructure
 
-- [ ] T012 Create docker-compose.yml with services: backend, frontend, mysql, redis
-- [ ] T013 [P] Create backend/Dockerfile
-- [ ] T014 [P] Create frontend/Dockerfile
-- [ ] T015 [P] Create .env.example with all required environment variables
-- [ ] T016 Create README.md with project overview and quick start instructions
+- [x] T012 Create docker-compose.yml with services: backend, frontend, mysql, redis
+- [x] T013 [P] Create backend/Dockerfile
+- [x] T014 [P] Create frontend/Dockerfile
+- [x] T015 [P] Create .env.example with all required environment variables
+- [x] T016 Create README.md with project overview and quick start instructions
 
 ---
 
@@ -73,44 +73,44 @@
 
 ### Database Models (Base)
 
-- [ ] T017 Create backend/app/models/base.py with common fields (id, created_at, updated_at, deleted_at)
-- [ ] T018 [P] Create backend/app/schemas/common.py with ApiResponse and PageResponse schemas
-- [ ] T019 [P] Create backend/app/crud/base.py with generic CRUD base class
+- [x] T017 Create backend/app/models/base.py with common fields (id, created_at, updated_at, deleted_at)
+- [x] T018 [P] Create backend/app/schemas/common.py with ApiResponse and PageResponse schemas
+- [x] T019 [P] Create backend/app/crud/base.py with generic CRUD base class
 
 ### Core Infrastructure
 
-- [ ] T020 Create backend/app/utils/security.py for password hashing (bcrypt) and JWT token generation/verification
-- [ ] T021 [P] Create backend/app/utils/redis_client.py for Redis connection and operations
-- [ ] T022 [P] Create backend/app/utils/captcha.py for graphical captcha generation using PIL
-- [ ] T023 [P] Create backend/app/utils/file_storage.py for file upload handling with local storage interface
-- [ ] T024 Create backend/app/core/permissions.py for permission checking utilities
-- [ ] T025 Create backend/app/middleware/auth.py for JWT authentication middleware
-- [ ] T026 [P] Create backend/app/middleware/logging.py for request logging with loguru
-- [ ] T027 [P] Create backend/app/middleware/cors.py for CORS configuration
+- [x] T020 Create backend/app/utils/security.py for password hashing (bcrypt) and JWT token generation/verification
+- [x] T021 [P] Create backend/app/utils/redis_client.py for Redis connection and operations
+- [x] T022 [P] Create backend/app/utils/captcha.py for graphical captcha generation using PIL
+- [x] T023 [P] Create backend/app/utils/file_storage.py for file upload handling with local storage interface
+- [x] T024 Create backend/app/core/permissions.py for permission checking utilities
+- [x] T025 Create backend/app/middleware/auth.py for JWT authentication middleware
+- [x] T026 [P] Create backend/app/middleware/logging.py for request logging with loguru
+- [x] T027 [P] Create backend/app/middleware/cors.py for CORS configuration
 
 ### Alembic Migrations Setup
 
-- [ ] T028 Initialize Alembic in backend/ with `alembic init alembic`
-- [ ] T029 Configure backend/alembic/env.py for async SQLAlchemy support
+- [x] T028 Initialize Alembic in backend/ with `alembic init alembic`
+- [x] T029 Configure backend/alembic/env.py for async SQLAlchemy support
 
 ### Frontend Core
 
-- [ ] T030 Create frontend/src/api/index.ts with axios instance and interceptors
-- [ ] T031 [P] Create frontend/src/utils/auth.ts for token storage and management
-- [ ] T032 [P] Create frontend/src/utils/request.ts for HTTP request wrapper
-- [ ] T033 [P] Create frontend/src/utils/permission.ts for permission checking utilities
-- [ ] T034 Create frontend/src/types/index.ts with TypeScript interfaces for all entities
-- [ ] T035 Create frontend/src/store/index.ts with Pinia setup
-- [ ] T036 [P] Create frontend/src/store/user.ts for user state management
-- [ ] T037 [P] Create frontend/src/store/permission.ts for permission state management
-- [ ] T038 [P] Create frontend/src/store/app.ts for app state (sidebar, tabs)
-- [ ] T039 Create frontend/src/router/index.ts with Vue Router setup and route guards
-- [ ] T040 Create frontend/src/App.vue as root component
-- [ ] T041 Create frontend/src/main.ts as application entry point
+- [x] T030 Create frontend/src/api/index.ts with axios instance and interceptors
+- [x] T031 [P] Create frontend/src/utils/auth.ts for token storage and management
+- [x] T032 [P] Create frontend/src/utils/request.ts for HTTP request wrapper
+- [x] T033 [P] Create frontend/src/utils/permission.ts for permission checking utilities
+- [x] T034 Create frontend/src/types/index.ts with TypeScript interfaces for all entities
+- [x] T035 Create frontend/src/store/index.ts with Pinia setup
+- [x] T036 [P] Create frontend/src/store/user.ts for user state management
+- [x] T037 [P] Create frontend/src/store/permission.ts for permission state management
+- [x] T038 [P] Create frontend/src/store/app.ts for app state (sidebar, tabs)
+- [x] T039 Create frontend/src/router/index.ts with Vue Router setup and route guards
+- [x] T040 Create frontend/src/App.vue as root component
+- [x] T041 Create frontend/src/main.ts as application entry point
 
 ### Main Application Entry
 
-- [ ] T042 Create backend/app/main.py with FastAPI app initialization, middleware registration, and router inclusion
+- [x] T042 Create backend/app/main.py with FastAPI app initialization, middleware registration, and router inclusion
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -124,29 +124,29 @@
 
 ### Tests for User Story 1 (Backend)
 
-- [ ] T043 [P] [US1] Create backend/tests/unit/test_security.py for password hashing and JWT tests
-- [ ] T044 [P] [US1] Create backend/tests/unit/test_captcha.py for captcha generation tests
-- [ ] T045 [P] [US1] Create backend/tests/api/test_auth.py for authentication endpoint tests
+- [x] T043 [P] [US1] Create backend/tests/unit/test_security.py for password hashing and JWT tests
+- [x] T044 [P] [US1] Create backend/tests/unit/test_captcha.py for captcha generation tests
+- [x] T045 [P] [US1] Create backend/tests/api/test_auth.py for authentication endpoint tests
 
 ### Models & Schemas for US1
 
-- [ ] T046 [P] [US1] Create backend/app/models/user.py with User model
-- [ ] T047 [P] [US1] Create backend/app/models/login_log.py with LoginLog model
-- [ ] T048 [P] [US1] Create backend/app/schemas/auth.py with LoginRequest, LoginResponse, CaptchaResponse, TokenRefresh schemas
-- [ ] T049 [P] [US1] Create backend/app/schemas/user.py with UserCreate, UserUpdate, UserResponse schemas
+- [x] T046 [P] [US1] Create backend/app/models/user.py with User model
+- [x] T047 [P] [US1] Create backend/app/models/login_log.py with LoginLog model
+- [x] T048 [P] [US1] Create backend/app/schemas/auth.py with LoginRequest, LoginResponse, CaptchaResponse, TokenRefresh schemas
+- [x] T049 [P] [US1] Create backend/app/schemas/user.py with UserCreate, UserUpdate, UserResponse schemas
 
 ### CRUD & Router for US1
 
-- [ ] T050 [US1] Create backend/app/crud/user.py with user CRUD operations
-- [ ] T051 [US1] Create backend/app/crud/log.py with login log CRUD operations
-- [ ] T052 [US1] Create backend/app/routers/auth.py with login, logout, refresh, captcha, user info endpoints
-- [ ] T053 [US1] Register auth router in backend/app/main.py
+- [x] T050 [US1] Create backend/app/crud/user.py with user CRUD operations
+- [x] T051 [US1] Create backend/app/crud/log.py with login log CRUD operations
+- [x] T052 [US1] Create backend/app/routers/auth.py with login, logout, refresh, captcha, user info endpoints
+- [x] T053 [US1] Register auth router in backend/app/main.py
 
 ### Database Migration for US1
 
-- [ ] T054 [US1] Create Alembic migration for users table
-- [ ] T055 [US1] Create Alembic migration for login_logs table
-- [ ] T056 [US1] Create seed data script for default super admin user
+- [x] T054 [US1] Create Alembic migration for users table
+- [x] T055 [US1] Create Alembic migration for login_logs table
+- [x] T056 [US1] Create seed data script for default super admin user
 
 **Checkpoint**: Backend authentication fully functional - can test login with Postman/curl
 

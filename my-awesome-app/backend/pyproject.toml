@@ -1,0 +1,28 @@
+[project]
+name = "rbac-admin-backend"
+version = "0.1.0"
+description = "RBAC Admin System Backend"
+requires-python = ">=3.11"
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+    | \.venv
+    | __pycache__
+    | alembic
+)/
+'''
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+select = ["E", "F", "I", "N", "W", "UP", "B", "C4", "SIM"]
+ignore = ["E501"]
+exclude = [".git", ".venv", "__pycache__", "alembic"]
+
+[tool.ruff.isort]
+known-first-party = ["app"]
