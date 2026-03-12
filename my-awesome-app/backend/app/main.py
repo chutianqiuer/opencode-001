@@ -8,6 +8,7 @@ from app.database import init_db
 from app.middleware.cors import setup_cors
 from app.middleware.logging import LoggingMiddleware, setup_logging
 from app.utils.redis_client import redis_client
+from app.routers import auth
 
 
 @asynccontextmanager
@@ -41,6 +42,8 @@ setup_cors(app)
 app.add_middleware(LoggingMiddleware)
 
 app.mount("/uploads", StaticFiles(directory=settings.UPLOAD_DIR), name="uploads")
+
+app.include_router(auth.router, prefix="/api/v1")
 
 
 @app.get("/health")

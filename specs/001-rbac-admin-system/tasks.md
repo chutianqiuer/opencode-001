@@ -124,29 +124,29 @@
 
 ### Tests for User Story 1 (Backend)
 
-- [ ] T043 [P] [US1] Create backend/tests/unit/test_security.py for password hashing and JWT tests
-- [ ] T044 [P] [US1] Create backend/tests/unit/test_captcha.py for captcha generation tests
-- [ ] T045 [P] [US1] Create backend/tests/api/test_auth.py for authentication endpoint tests
+- [x] T043 [P] [US1] Create backend/tests/unit/test_security.py for password hashing and JWT tests
+- [x] T044 [P] [US1] Create backend/tests/unit/test_captcha.py for captcha generation tests
+- [x] T045 [P] [US1] Create backend/tests/api/test_auth.py for authentication endpoint tests
 
 ### Models & Schemas for US1
 
-- [ ] T046 [P] [US1] Create backend/app/models/user.py with User model
-- [ ] T047 [P] [US1] Create backend/app/models/login_log.py with LoginLog model
-- [ ] T048 [P] [US1] Create backend/app/schemas/auth.py with LoginRequest, LoginResponse, CaptchaResponse, TokenRefresh schemas
-- [ ] T049 [P] [US1] Create backend/app/schemas/user.py with UserCreate, UserUpdate, UserResponse schemas
+- [x] T046 [P] [US1] Create backend/app/models/user.py with User model
+- [x] T047 [P] [US1] Create backend/app/models/login_log.py with LoginLog model
+- [x] T048 [P] [US1] Create backend/app/schemas/auth.py with LoginRequest, LoginResponse, CaptchaResponse, TokenRefresh schemas
+- [x] T049 [P] [US1] Create backend/app/schemas/user.py with UserCreate, UserUpdate, UserResponse schemas
 
 ### CRUD & Router for US1
 
-- [ ] T050 [US1] Create backend/app/crud/user.py with user CRUD operations
-- [ ] T051 [US1] Create backend/app/crud/log.py with login log CRUD operations
-- [ ] T052 [US1] Create backend/app/routers/auth.py with login, logout, refresh, captcha, user info endpoints
-- [ ] T053 [US1] Register auth router in backend/app/main.py
+- [x] T050 [US1] Create backend/app/crud/user.py with user CRUD operations
+- [x] T051 [US1] Create backend/app/crud/log.py with login log CRUD operations
+- [x] T052 [US1] Create backend/app/routers/auth.py with login, logout, refresh, captcha, user info endpoints
+- [x] T053 [US1] Register auth router in backend/app/main.py
 
 ### Database Migration for US1
 
-- [ ] T054 [US1] Create Alembic migration for users table
-- [ ] T055 [US1] Create Alembic migration for login_logs table
-- [ ] T056 [US1] Create seed data script for default super admin user
+- [x] T054 [US1] Create Alembic migration for users table
+- [x] T055 [US1] Create Alembic migration for login_logs table
+- [x] T056 [US1] Create seed data script for default super admin user
 
 **Checkpoint**: Backend authentication fully functional - can test login with Postman/curl
 
